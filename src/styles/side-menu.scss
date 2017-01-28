@@ -1,0 +1,44 @@
+@import "mixins";
+
+.side-menu {
+	min-width: 250px;
+
+	&__title {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 16px;
+
+		&:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 1px;
+			background: #333;
+			opacity: .8;
+		}
+	}
+
+	&__item {
+		display: block;
+		line-height: 160%;
+		color: #333;
+		font-size: 20px;
+		@include serif();
+		text-decoration: none;
+		margin: 12px 0;
+
+		&:focus {
+			text-decoration: underline;
+			outline: none;
+		}
+	}
+
+	&__divider {
+		width: 120px;
+		height: 1px;
+		background: #D1D1D1;
+		margin: 22px 0;
+	}
+}

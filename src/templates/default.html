@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+	<title>Danderyds gymnasium</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i">
+
+	<link rel="stylesheet" href="/styles/text.css">
+	<link rel="stylesheet" href="/styles/main.css">
+	<link rel="stylesheet" href="/styles/header.css">
+	<link rel="stylesheet" href="/styles/banner.css">
+	<link rel="stylesheet" href="/styles/cover.css">
+	<link rel="stylesheet" href="/styles/side-menu.css">
+	<link rel="stylesheet" href="/styles/news-item.css">
+	<link rel="stylesheet" href="/styles/pagination.css">
+	<link rel="stylesheet" href="/styles/profile.css">
+	<link rel="stylesheet" href="/styles/nav.css">
+	<link rel="stylesheet" href="/styles/slides.css">
+	<link rel="stylesheet" href="/styles/button.css">
+	<link rel="stylesheet" href="/styles/cards.css">
+	<link rel="stylesheet" href="/styles/program.css">
+	<link rel="stylesheet" href="/styles/message.css">
+	<link rel="stylesheet" href="/styles/footer.css">
+</head>
+<body>
+	<header class="header">
+		<div class="content header__content">
+			<a href="/">
+				<img
+					class="header__logo{{ ' header__logo--dark' if header_dark }}"
+					src="/images/logo{{ '_dark' if header_dark }}.svg"
+					alt="Danderyds gymnasium"
+				>
+			</a>
+
+			<input id="menu" type="checkbox" class="menu" autocomplete="off">
+			<label class="menu__label" for="menu" aria-label="Meny">
+				<img src="/images/icons/menu{{ '_dark' if header_dark }}.svg">
+			</label>
+
+			<nav class="nav{{ ' nav--dark' if header_dark }}">
+				<a
+					class="nav__item{{ ' nav__item--active' if page_url == '/soka-hit' }}"
+					href="/soka-hit"
+				>Söka hit</a>
+
+				<a
+					class="nav__item{{ ' nav__item--active' if page_url == '/program' }}"
+					href="/program"
+				>Program</a>
+
+				<a
+					class="nav__item{{ ' nav__item--active' if page_url == '/om-skolan' }}"
+					href="/om-skolan"
+				>Om skolan</a>
+
+				<a
+					class="nav__item{{ ' nav__item--active' if page_url == '/nyheter' }}"
+					href="/nyheter"
+				>Nyheter</a>
+
+				<a
+					class="nav__item{{ ' nav__item--active' if page_url == '/kontakt' }}"
+					href="/kontakt"
+				>Kontakt</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		{% block content %}{% endblock %}
+	</main>
+
+	<footer>
+		<div class="content footer__content">
+			<div class="footer__column">
+				<div class="footer__title">Kontakt</div>
+				<span class="footer__text">
+					<a
+						href="http://maps.google.com/?q=Danderyds%20gymnasium,%20Rinkebyv%C3%A4gen%204,%20182%2036%20Danderyd"
+						class="footer__link"
+					>
+						Rinkebyvägen 4,<br>
+						182 36 Danderyd
+					</a>
+
+					<a href="mailto:info@dagy.danderyd.se" class="footer__link">
+						info@dagy.danderyd.se
+					</a>
+
+					<a href="tel:08-568 913 01" class="footer__link">
+						08-568 913 01
+					</a>
+				</span>
+			</div>
+
+			<div class="footer__column">
+				<img class="footer__logo" src="/images/logo.svg" alt="Danderyds gymnasium">
+
+				<div>
+					<a
+						href="https://www.instagram.com/danderyds.gymnasium/"
+						class="footer__icon"
+					>
+						<img src="/images/icons/instagram.svg">
+					</a>
+
+					<a href="https://www.facebook.com/dandgym" class="footer__icon">
+						<img src="/images/icons/facebook.svg">
+					</a>
+				</div>
+			</div>
+
+			<div class="footer__column">
+				<div class="footer__title">Intranät</div>
+				<span class="footer__text">
+					<a href="https://danderydsgymnasium.sharepoint.com" class="footer__link">
+						Portalen
+					</a>
+
+					<a href="https://dagy.hypernet.com" class="footer__link">
+						Hypernet
+					</a>
+				</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
