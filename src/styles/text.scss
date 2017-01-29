@@ -26,3 +26,8 @@
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.subtitle {
+	@include serif();
+	font-size: 24px;
+}

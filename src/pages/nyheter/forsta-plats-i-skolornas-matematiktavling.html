@@ -1,0 +1,53 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+<img class="content cover" src="/images/SMT Final 2016 Vinnare_1.jpg" alt="David Wärn och Nicole Hedblom">
+
+	<section class="content">
+		<div class="text-wrapper">
+			<div class="title">Första plats i Skolornas Matematiktävling</div>
+
+			<div class="label">
+				<img class="icon" src="/images/icons/calendar.svg" aria-hidden="true">
+				23 januari 2017
+			</div>
+
+			<p class="text">
+				Grattis till David Wärn som även i år segrade i Skolornas Matematiktävling med full poäng (42). Grattis till Nicole Hedblom N14a som kom på fjärde plats.
+			</p>
+
+			<p class="text">
+				Se artikel i
+				<a href="https://mitti.se/nyheter/danderyd-matte-igen/?omrade=danderyd" class="anchor">
+					Mitt i Danderyd
+				</a>
+			</p>
+		</div>
+	</section>
+
+	<section class="pagination__wrapper">
+		<!-- <a href="#" class="pagination"> -->
+		<!-- 	<img class="icon icon--large" src="/images/icons/left.svg" aria-hidden="true"> -->
+
+		<!-- 	<div class="pagination__left"> -->
+		<!-- 		<div class="pagination__subtitle">Föregående nyhet</div> -->
+		<!-- 		<div class="pagination__title">Första plats i Skolornas Matematiktävling</div> -->
+		<!-- 	</div> -->
+		<!-- </a> -->
+
+		<div class="pagination__spacer"></div>
+
+		<a href="/nyheter/forelasning-med-entreprenoren-karoline-kull" class="pagination">
+			<div class="pagination__right">
+				<div class="pagination__subtitle">Föregående nyhet</div>
+				<div class="pagination__title">
+					Föreläsning med entreprenören Karoline Kull
+				</div>
+			</div>
+
+			<img class="icon icon--large" src="/images/icons/right.svg" aria-hidden="true">
+		</a>
+	</section>
+{% endblock %}

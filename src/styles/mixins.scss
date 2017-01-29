@@ -5,3 +5,20 @@
 @mixin sans() {
 	font-family: 'Open Sans', sans-serif;
 }
+
+@mixin underline() {
+	text-decoration: none;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(0,0,0,.6) 50%,
+		rgba(0,0,0,0) 50%
+	);
+	background-repeat: repeat-x;
+	background-size: 2px .1em;
+	background-position: 0 1.07em;
+
+	&:focus {
+		outline: none;
+		background-image: none;
+	}
+}

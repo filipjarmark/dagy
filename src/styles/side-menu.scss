@@ -2,6 +2,9 @@
 
 .side-menu {
 	min-width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 
 	&__title {
 		position: relative;
@@ -21,17 +24,23 @@
 	}
 
 	&__item {
-		display: block;
 		line-height: 160%;
 		color: #333;
 		font-size: 20px;
 		@include serif();
-		text-decoration: none;
 		margin: 12px 0;
+		text-decoration: none;
 
 		&:focus {
-			text-decoration: underline;
 			outline: none;
+			background-image: linear-gradient(
+				to bottom,
+				rgba(0,0,0,.6) 50%,
+				rgba(0,0,0,0) 50%
+			);
+			background-repeat: repeat-x;
+			background-size: 2px .1em;
+			background-position: 0 1.3em;
 		}
 	}
 

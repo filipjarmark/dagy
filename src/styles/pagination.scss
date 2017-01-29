@@ -7,8 +7,11 @@
 	color: inherit;
 
 	&:focus {
-		text-decoration: underline;
 		outline: none;
+
+		.pagination__title {
+			text-decoration: underline;
+		}
 	}
 
 	&__item {
