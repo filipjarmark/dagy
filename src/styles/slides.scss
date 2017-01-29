@@ -76,6 +76,7 @@
 	transition: opacity ease 250ms;
 	will-change: opacity;
 	display: none;
+	background: #000;
 }
 .slide--active {
 	opacity: 1;
@@ -109,8 +110,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	opacity: .5;
 
-	-webkit-filter: blur(2px) brightness(.5);
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
 }
 
 .slide__title {
