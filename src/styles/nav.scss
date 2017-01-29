@@ -1,11 +1,6 @@
 .nav {
 	display: flex;
 	align-items: center;
-	color: #fff;
-
-	&--dark {
-		color: #001B30;
-	}
 
 	@media (max-width: 680px) {
 		display: none;
@@ -68,6 +63,7 @@
 }
 
 .menu__label {
+	fill: currentColor;
 	align-self: center;
 	position: relative;
 	z-index: 1;
@@ -92,10 +88,12 @@
 			position: fixed;
 			right: 18px;
 			top: 36px;
+			color: #fff;
 		}
 
 		& ~ nav {
 			display: flex;
+			color: #fff;
 		}
 	}
 }

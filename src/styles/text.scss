@@ -3,6 +3,14 @@
 .title {
 	@include serif();
 	font-size: 40px;
+
+	@media (max-width: 600px) {
+		font-size: 36px;
+	}
+
+	@media (max-width: 360px) {
+		font-size: 30px;
+	}
 }
 
 ol, ul {
