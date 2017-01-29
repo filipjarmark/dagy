@@ -94,7 +94,7 @@ gulp.task('dev', (cb) => {
 	runSequence([
 		'styles',
 		'pages',
-		'files'
+		'files',
 		'watch',
 		'serve'
 	], cb);
