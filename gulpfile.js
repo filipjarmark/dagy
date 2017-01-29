@@ -4,6 +4,10 @@ const nunjucks = require('gulp-nunjucks-render');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const runSequence = require('run-sequence');
+const inline = require('gulp-inline');
+const htmlmin = require('gulp-htmlmin');
+
+const filterCSS = require('./gulp/filter-css.js');
 
 
 
@@ -69,9 +73,28 @@ gulp.task('files', () => {
 });
 
 
+gulp.task('optimize', () => {
+	return gulp.src('build/**/*.html')
+		.pipe(inline({
+			base: 'build/',
+			disabledTypes: ['img', 'svg', 'js']
+		}))
+		.pipe(filterCSS())
+		.pipe(htmlmin({
+			minifyCSS: true,
+			removeComments: true,
+			collapseWhitespace: true,
+			conservativeCollapse: true
+		}))
+		.pipe(gulp.dest('build'));
+});
+
+
 gulp.task('dev', (cb) => {
 	runSequence([
-		'build',
+		'styles',
+		'pages',
+		'files'
 		'watch',
 		'serve'
 	], cb);
@@ -83,5 +106,5 @@ gulp.task('build', (cb) => {
 		'styles',
 		'pages',
 		'files'
-	], cb);
+	], 'optimize', cb);
 });
