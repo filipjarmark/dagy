@@ -15,7 +15,6 @@
 		bottom: 0;
 		left: 0;
 		overflow-y: auto;
-		background: #000;
 		flex-direction: column;
 		justify-content: center;
 		background: #001B30;
@@ -44,7 +43,7 @@
 		bottom: -1px;
 		left: 0;
 		height: 2px;
-		background: #fff;
+		background: currentColor;
 		opacity: .5;
 	}
 

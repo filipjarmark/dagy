@@ -57,6 +57,10 @@ main {
 	}
 
 	&__column {
+		&:first-child {
+			flex: 1;
+		}
+
 		&:not(:last-child) {
 			padding-right: 96px;
 
@@ -97,4 +101,19 @@ section {
 	font-size: 14px;
 	font-weight: 300;
 	margin-top: 10px;
+}
+
+
+
+table {
+	margin: 16px 0;
+	table-layout: fixed;
+	width: 100%;
+	line-height: 150%;
+	font-weight: 300;
+	width: 100%;
+	max-width: 700px;
+	font-size: 18px;
+	line-height: 1.58;
+	letter-spacing: -.003em;
 }

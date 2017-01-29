@@ -1,0 +1,140 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<img class="content cover" src="/images/xpt4_hgzsjw-alex-robert.png" alt="">
+
+	<section class="content content--columns">
+		<div class="content__column">
+			<div class="title">Poängplan</div>
+			<div class="subtitle">Gymnasiesärskolan</div>
+
+			<br>
+			<br>
+
+			<div class="cols">
+				<div class="col">
+					<div class="subheading">Gymnasiesärskolegemensamma ämnen</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>Svenska 1</td>
+								<td>200p</td>
+							</tr>
+							<tr>
+								<td>Engelska 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Samhällskunskap 1</td>
+								<td>50p</td>
+							</tr>
+							<tr>
+								<td>Religion 1</td>
+								<td>50p</td>
+							</tr>
+							<tr>
+								<td>Historia 1</td>
+								<td>50p</td>
+							</tr>
+							<tr>
+								<td>Naturkunskap 1</td>
+								<td>50p</td>
+							</tr>
+							<tr>
+								<td>Idrott och hälsa</td>
+								<td>200p</td>
+							</tr>
+							<tr>
+								<td>Estetisk verksamhet</td>
+								<td>100p</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td>Gymnasiesärskolearbetet</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Individuellt val</td>
+								<td>200p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col">
+					<div class="subheading">Programgemensamma ämnen</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>Bageri- och konditorikunskap</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Hotell</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Livsmedel- och näringskunskap</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Måltids- och branschkunskap</td>
+								<td>200p</td>
+							</tr>
+							<tr>
+								<td>Service och bemötande 1</td>
+								<td>100p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="subtitle">Programfördjupning</div>
+			<div class="cols">
+				<div class="col">
+					<table>
+						<tbody>
+							<tr>
+								<td>Hem- och konsument kunskap 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Lokalvård 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matlagning 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matlagning 2</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Servering 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Digital kompetens</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Bageri</td>
+								<td>100p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/gymnasiesarskolan/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}

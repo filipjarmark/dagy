@@ -5,6 +5,28 @@
 	font-size: 40px;
 }
 
+ol, ul {
+	color: #6A6563;
+	font-weight: 300;
+	width: 100%;
+	max-width: 700px;
+	font-style: normal;
+	font-size: 21px;
+	line-height: 1.58;
+	letter-spacing: -.003em;
+	padding: 0 0 0 8px;
+	margin: 16px 0;
+}
+
+li {
+	list-style-type: none;
+
+	&:before {
+		content: "-";
+		padding-right: 4px;
+	}
+}
+
 .text {
 	color: #6A6563;
 	font-weight: 300;
@@ -30,4 +52,9 @@
 .subtitle {
 	@include serif();
 	font-size: 24px;
+}
+
+.subheading {
+	@include serif();
+	font-size: 20px;
 }

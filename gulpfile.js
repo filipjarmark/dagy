@@ -26,7 +26,12 @@ gulp.task('serve', () => {
 
 gulp.task('watch', () => {
 	gulp.watch('src/styles/**/*', ['styles', browserSync.reload]);
-	gulp.watch(['src/pages/**/*', 'src/templates/**/*'], ['pages', browserSync.reload]);
+
+	gulp.watch([
+		'src/pages/**/*',
+		'src/templates/**/*'
+	], ['pages', browserSync.reload]);
+
 	gulp.watch([
 		'src/images/**/*',
 		'src/assets/**/*',
@@ -48,7 +53,7 @@ gulp.task('pages', () => {
 	return gulp.src('src/pages/**/*')
 		.pipe(nunjucks({
 			path: ['src/pages', 'src/templates']
-		}).on('error', () => {}))
+		}))
 		.pipe(gulp.dest('build/'));
 });
 

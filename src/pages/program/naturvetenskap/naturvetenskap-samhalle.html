@@ -1,0 +1,33 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<img class="content cover" src="/images/rtzw4f02zy8-nasa.png" alt="Öppet hus på Dagy">
+
+	<section class="content content--columns">
+		<div class="content__column">
+			<div class="title">Inriktning Naturvetenskap och samhälle</div>
+			<div class="subtitle">Naturvetenskapsprogrammet</div>
+
+			<br>
+			<br>
+
+			<div class="subtitle">Idrott och hälsa</div>
+			<p class="text">
+				Inom inriktning Naturvetenskap och Samhälle erbjuder vi
+				en programfördjupning med fokus på människors fysiska
+				och psykiska hälsa. Programfördjupningen heter Idrott och
+				hälsa och har skapats för att garantera dig kurser med fysisk
+				aktivitet under alla dina tre år på gymnasiet. För ökad
+				behörighet till högskolan kan du till exempel läsa Matematik
+				4 och Fysik 2 inom ramen för ditt individuella val.
+			</p>
+
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/naturvetenskap/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<img class="content cover" src="/images/d7czyewzyzc-ricardo-gomez-angel.png" alt="">
+
+	<section class="content content--columns">
+		<div class="content__column">
+			<div class="title">Inriktning design och produktutveckling</div>
+			<div class="subtitle">Teknikprogrammet</div>
+
+			<p class="text">
+				Här ligger fokus på AR och VR teknologier (samma teknologi
+				som Pokémon Go och IKEA). Du kommer att utbildas
+				i att ta fram innehåll som du självklart kan använda i
+				din smartphone och du kommer att skapa virtuella utställningar
+				med dina produkter som du kan ta med överallt,
+				HTC VIVE är en integrerad del av utbildningen.
+			</p>
+
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/teknik/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}

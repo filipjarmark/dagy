@@ -1,0 +1,39 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<img class="content cover" src="/images/vq__yk6faoi-claire-anderson.png" alt="">
+
+	<section class="content content--columns">
+		<div class="content__column">
+			<span class="title">Samhällsvetenskapsprogrammet</span>
+
+			<p class="text">
+				Utbildningen fokuserar på vilka faktorer som styr och bygger ett
+				samhälle och samspelet mellan aktörer som ingår i ett samhällssystem.
+				Vi tar upp frågor som rör demokrati, mänskliga rättigheter,
+				kommunikation, etik, genus och miljö i ett modernt samhälle.
+			</p>
+
+			<div class="profile">
+				<img class="profile__image" src="/images/olsson.png" alt="Per-Åke Olsson">
+				<div class="profile__info">
+					<div class="profile__title">Per-Åke Olsson</div>
+					<div>Programrektor</div>
+
+					<a class="profile__link" href="mailto:paolsson@dagy.danderyd.se">
+						paolsson@dagy.danderyd.se
+					</a>
+					<a class="profile__link" href="tel:073-748 19 22">
+						073-748 19 22
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/samhallsvetenskap/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}

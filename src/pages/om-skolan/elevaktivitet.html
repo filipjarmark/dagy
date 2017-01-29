@@ -1,0 +1,63 @@
+{% set page_url = '/om-skolan' %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<section class="banner">
+		<div class="banner__img" style="background-image: url('/images/IMG_20160912_170024.png');"></div>
+
+		<div class="banner__content content">
+			<div class="banner__title title">Om skolan</div>
+			<p class="banner__text">
+			</p>
+		</div>
+	</section>
+
+	<section class="content content--columns">
+		<div class="content__column">
+			<div class="title">Elevaktivitet</div>
+			<br>
+
+			<p class="text">
+				Här är ett urval av några av alla de föreningar som våra engagerade elever och lärare är engagerade i
+			</p>
+
+			<div class="subtitle">Mångfaldsgruppen</div>
+			<p class="text">
+				Mångfaldsgruppen jobbar för att alla ska känna sig inkluderade på Dagy. Gruppen driver viktiga frågor som rör allas lika värde, antirasism, feminism och HBTQ. Välkommen du också!
+			</p>
+
+			<p class="text">
+				Ansvariga lärare: Malin Nordh och Frida Lotfi
+			</p>
+
+			<div class="subtitle">
+				Idrottsföreningen
+			</div>
+			<p class="text">
+			</p>
+
+			<div class="subtitle">
+				Gåsbladet
+			</div>
+			<p class="text">
+			</p>
+
+			<div class="subtitle">
+				Elevkåren
+			</div>
+			<p class="text">
+			</p>
+
+			<div class="subtitle">
+				Alef-noll
+			</div>
+			<p class="text">
+			</p>
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/om-skolan/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}

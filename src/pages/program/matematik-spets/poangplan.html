@@ -1,0 +1,145 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<img class="content cover" src="/images/5mz_m06fc9g-roman-mager.png" alt="Matematik">
+
+	<section class="content content--columns">
+		<div class="content__column">
+			<div class="title">Poängplan</div>
+			<div class="subtitle">Matematik spetsutbildning</div>
+
+			<br>
+			<br>
+
+			<div class="cols">
+				<div class="col">
+					<div class="subheading">Gymnasiegemensamma ämnen</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>Engelska 5</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Engelska 6</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Historia 1b</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Idrott och hälsa 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 1c</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 2c</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 3c</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Religionskunskap 1</td>
+								<td>50p</td>
+							</tr>
+							<tr>
+								<td>Samhällskunskap 1b</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Svenska 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Svenska 2</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Svenska 3</td>
+								<td>100p</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td>Gymnasiearbete</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Individuellt val</td>
+								<td>200p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col">
+					<div class="subheading">Programgemensamma ämnen</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>Biologi 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Fysik 1</td>
+								<td>150p</td>
+							</tr>
+							<tr>
+								<td>Kemi 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Moderna språk</td>
+								<td>100p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="subtitle">Programfördjupning</div>
+			<div class="cols">
+				<div class="col">
+					<table>
+						<tbody>
+							<tr>
+								<td>Fysik 2</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik - specialisering 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik - specialisering 2</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 4</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 5</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Biologi 2, Fysik 3 eller Kemi 2 </td>
+								<td>100p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/matematik-spets/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}

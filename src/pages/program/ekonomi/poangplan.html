@@ -1,0 +1,221 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<img class="content cover" src="/images/zkvbm2_dp84-didier-weemaels.png" alt="">
+
+	<section class="content content--columns">
+		<div class="content__column">
+			<div class="title">Poängplan</div>
+			<div class="subtitle">Ekonomiprogrammet</div>
+
+			<br>
+			<br>
+
+			<div class="cols">
+				<div class="col">
+					<div class="subheading">Gymnasiegemensamma ämnen</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>Engelska 5</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Engelska 6</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Historia 1b</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Idrott och hälsa 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 1c</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 2c</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 3c</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Religionskunskap 1</td>
+								<td>50p</td>
+							</tr>
+							<tr>
+								<td>Samhällskunskap 1b</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Svenska 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Svenska 2</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Svenska 3</td>
+								<td>100p</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td>Gymnasiearbete</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Individuellt val</td>
+								<td>200p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col">
+					<div class="subheading">Programgemensamma ämnen</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>Företagsekonomi 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Privatjuridik</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Psykologi 1</td>
+								<td>50p</td>
+							</tr>
+							<tr>
+								<td>Moderna språk</td>
+								<td>100p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="title">Inriktningar</div>
+
+			<div class="subtitle">Ekonomi</div>
+			<div class="cols">
+				<div class="col">
+					<table>
+						<tbody>
+							<tr>
+								<td>Entreprenörskap och företagande</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Företagsekonomi 2</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 3b</td>
+								<td>100p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="cols">
+				<div class="col">
+					<div class="subheading">Internationell ekonomi</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>Engelska 7</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Företagsekonomi - specialisering</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Internationell ekonomi</td>
+								<td>100p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col">
+					<div class="subheading">Kreativ marknadsföring</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>Marknadsföring</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Grafisk kommunikation 1</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Medier, samhälle och kommunikation 1</td>
+								<td>100p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="subtitle">Juridik</div>
+			<div class="cols">
+				<div class="col">
+					<table>
+						<tbody>
+							<tr>
+								<td>Filosofi 1</td>
+								<td>50p</td>
+							</tr>
+							<tr>
+								<td>Affärsjuridik</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Rätten och samhället</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Psykologi 2a</td>
+								<td>50p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="cols">
+				<div class="col">
+					<div class="subheading">Juridik</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>Företagsekonomi 2</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Matematik 3b</td>
+								<td>100p</td>
+							</tr>
+							<tr>
+								<td>Val av språl</td>
+								<td>100p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/ekonomi/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}

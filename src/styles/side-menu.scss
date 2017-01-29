@@ -1,10 +1,11 @@
 @import "mixins";
 
 .side-menu {
-	min-width: 250px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	width: 280px;
+
+	@media (max-width: 600px) {
+		width: auto;
+	}
 
 	&__title {
 		position: relative;
@@ -28,8 +29,8 @@
 		color: #333;
 		font-size: 20px;
 		@include serif();
-		margin: 12px 0;
 		text-decoration: none;
+		display: inline;
 
 		&:focus {
 			outline: none;
@@ -49,5 +50,9 @@
 		height: 1px;
 		background: #D1D1D1;
 		margin: 22px 0;
+	}
+
+	&__break {
+		height: 24px;
 	}
 }

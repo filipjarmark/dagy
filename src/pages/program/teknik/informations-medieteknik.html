@@ -1,0 +1,33 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<img class="content cover" src="/images/d7czyewzyzc-ricardo-gomez-angel.png" alt="">
+
+	<section class="content content--columns">
+		<div class="content__column">
+			<div class="title">Inriktning informations- och medieteknik</div>
+			<div class="subtitle">Teknikprogrammet</div>
+
+			<br>
+			<br>
+
+			<div class="title">Fördjupningar</div>
+
+			<div class="subtitle">VR programmering</div>
+			<p class="text">
+				Här arbetar vi bland annat med C# och Stingray. Vi har
+				fullt utrustade bokningsbara VR-labbs där du kan skapa
+				fantastiska miljöer för spel och information. Vi arbetar
+				med de senaste teknologierna och standarderna där HTC
+				VIVE är en integrerad del av undervisningen.
+			</p>
+
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/teknik/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}
