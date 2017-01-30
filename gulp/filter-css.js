@@ -52,7 +52,7 @@ const pseudoSelectors = [
 
 
 
-const filterSelectors = postcss.plugin(PLUGIN_NAME, ({ $ } = {}) => {
+const filterSelectors = postcss.plugin(PLUGIN_NAME, ({ $, whitelist = [] } = {}) => {
 	const pseudos = new RegExp(':(' + pseudoSelectors.join('|') + ')', 'gi');
 
 	return function (root) {
@@ -60,6 +60,8 @@ const filterSelectors = postcss.plugin(PLUGIN_NAME, ({ $ } = {}) => {
 			if (rule.parent.type === 'atrule') return;
 
 			const selector = rule.selector.replace(pseudos, '');
+			if (whitelist.includes(selector)) return;
+
 			if ($(selector).length === 0)
 				rule.remove();
 		});
@@ -67,14 +69,14 @@ const filterSelectors = postcss.plugin(PLUGIN_NAME, ({ $ } = {}) => {
 });
 
 
-function parseHTML(str) {
+function parseHTML(str, { whitelist = [] } = {}) {
 	const $ = cheerio.load(str);
 
 	$('style').each((i, e) => {
 		const style = $(e);
 
 		const filtered = postcss([
-			filterSelectors({ $ })
+			filterSelectors({ $, whitelist })
 		]).process(style.text()).css;
 
 		style.text(filtered);
@@ -100,7 +102,7 @@ function combineStyleTags($) {
 }
 
 
-function filterCSS() {
+function filterCSS({ whitelist = [] } = {}) {
 	return through.obj((file, encoding, callback) => {
 		if (file.isNull())
 			return callback(null, file);
@@ -109,7 +111,7 @@ function filterCSS() {
 			this.emit('error', new PluginError(PLUGIN_NAME, 'Streams not supported!'));
 		} else if (file.isBuffer()) {
 			const str = file.contents.toString();
-			file.contents = new Buffer(parseHTML(str));
+			file.contents = new Buffer(parseHTML(str, { whitelist }));
 
 			return callback(null, file);
 		}

@@ -79,7 +79,9 @@ gulp.task('optimize', () => {
 			base: 'build/',
 			disabledTypes: ['img', 'svg', 'js']
 		}))
-		.pipe(filterCSS())
+		.pipe(filterCSS({
+			whitelist: ['.slides__progress--play']
+		}))
 		.pipe(htmlmin({
 			minifyCSS: true,
 			removeComments: true,
