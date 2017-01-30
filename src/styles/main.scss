@@ -25,9 +25,15 @@ main {
 	margin: 24px -24px;
 	-webkit-overflow-scrolling: touch;
 
-	@media (max-width: 600px) {
+	@media (max-width: 760px) {
 		overflow-x: auto;
 		margin: 12px -12px;
+	}
+
+	&--responsive {
+		@media (max-width: 760px) {
+			display: block;
+		}
 	}
 }
 
@@ -118,4 +124,22 @@ table {
 	font-size: 18px;
 	line-height: 1.58;
 	letter-spacing: -.003em;
+}
+
+
+
+.map {
+	flex: 1;
+	padding: 16px;
+	display: flex;
+	box-sizing: border-box;
+	min-height: 320px;
+
+	@media (max-width: 600px) {
+		padding: 0;
+	}
+
+	&__container {
+		flex: 1;
+	}
 }

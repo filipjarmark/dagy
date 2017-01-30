@@ -15,39 +15,55 @@
 
 	<section class="content">
 		<div class="text-wrapper">
-			<div>
-				<span class="subtitle">Telefon</span>
-				<p class="text">
-					<a href="tel:08-568 913 01" class="anchor">
-						08-568 913 01
-					</a>
-				</p>
+			<div class="grid grid--responsive">
+				<div>
+					<span class="subtitle">Telefon</span>
+					<p class="text">
+						<a href="tel:08-568 913 01" class="anchor">
+							08-568 913 01
+						</a>
+					</p>
 
-				<span class="subtitle">E-post</span>
-				<p class="text">
-					<a href="mailto:info@dagy.danderyd.se" class="anchor">
-						info@dagy.danderyd.se
-					</a>
-				</p>
+					<span class="subtitle">E-post</span>
+					<p class="text">
+						<a href="mailto:info@dagy.danderyd.se" class="anchor">
+							info@dagy.danderyd.se
+						</a>
+					</p>
 
-				<span class="subtitle">Adress</span>
-				<p class="text">
-					<a
-						href="http://maps.google.com/?q=Danderyds%20gymnasium,%20Rinkebyv%C3%A4gen%204,%20182%2036%20Danderyd"
-						class="anchor"
-					>
-						Rinkebyvägen 4,<br>
-						182 36 Danderyd
-					</a>
-				</p>
+					<span class="subtitle">Adress</span>
+					<p class="text">
+						<a
+							href="http://maps.google.com/?q=Danderyds%20gymnasium,%20Rinkebyv%C3%A4gen%204,%20182%2036%20Danderyd"
+							class="anchor"
+						>
+							Rinkebyvägen 4,<br>
+							182 36 Danderyd
+						</a>
+					</p>
 
-				<span class="subtitle">Kollektivtrafik</span>
-				<p class="text">
-					Buss: 602, 604, 611, 613<br>
-					Roslagsbanan: Djursholms Ekeby Station
-				</p>
+					<span class="subtitle">Kollektivtrafik</span>
+					<p class="text">
+						Buss: 602, 604, 611, 613<br>
+						Roslagsbanan: Djursholms Ekeby Station
+					</p>
+				</div>
+
+				<div class="map">
+					<div
+						id="map"
+						class="map__container"
+						data-lat="59.4151194"
+						data-lng="18.0423185"
+					></div>
+
+					<script defer src="/scripts/map.js"></script>
+					<script defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAlmCvQaPvqK3HWyd3GWRmHtKq-b07GOV0"></script>
+				</div>
 			</div>
+		</div>
 
+		<div class="text-wrapper">
 			<div class="title">Studie- och yrkesvägledare</div>
 			<div class="profiles">
 				<div class="profile">
