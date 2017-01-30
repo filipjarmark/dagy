@@ -23,6 +23,7 @@ main {
 .grid {
 	display: flex;
 	margin: 24px -24px;
+	-webkit-overflow-scrolling: touch;
 
 	@media (max-width: 600px) {
 		overflow-x: auto;
