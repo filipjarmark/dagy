@@ -16,7 +16,9 @@
 .card__image {
 	height: 200px;
 	min-width: 100%;
-	object-fit: cover;
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 6px;
 }
 
 .card__date {

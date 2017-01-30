@@ -5,7 +5,8 @@
 	margin-bottom: 0;
 	height: 500px;
 	max-height: 50vh;
-	object-fit: cover;
+	background-size: cover;
+	background-position: center center;
 	box-sizing: border-box;
 
 	@media (max-width: 600px) {

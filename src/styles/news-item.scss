@@ -32,7 +32,8 @@
 	&__image {
 		width: 360px;
 		height: 268px;
-		object-fit: cover;
+		background-size: cover;
+		background-position: center center;
 		margin-right: 100px;
 
 		@media (max-width: 800px) {
