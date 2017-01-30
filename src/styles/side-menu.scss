@@ -32,6 +32,7 @@
 		text-decoration: none;
 		display: inline;
 
+		&--active,
 		&:focus {
 			outline: none;
 			background-image: linear-gradient(

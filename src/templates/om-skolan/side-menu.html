@@ -2,11 +2,15 @@
 	<div class="side-menu__title title">Mer info</div>
 
 	<div class="side-menu__break"></div>
-	<a href="/om-skolan/lasarsdata" class="side-menu__item">
+	<a href="/om-skolan" class="side-menu__item{{ ' side-menu__item--active' if page_url == '/om-skolan' }}">
+		Om skolan
+	</a>
+	<div class="side-menu__break"></div>
+	<a href="/om-skolan/lasarsdata" class="side-menu__item{{ ' side-menu__item--active' if page_url == '/om-skolan/lasarsdata' }}">
 		Läsårsdata
 	</a>
 	<div class="side-menu__break"></div>
-	<a href="/om-skolan/elevaktivitet" class="side-menu__item">
+	<a href="/om-skolan/elevaktivitet" class="side-menu__item{{ ' side-menu__item--active' if page_url == '/om-skolan/elevaktivitet' }}">
 		Elevaktivitet
 	</a>
 </div>
