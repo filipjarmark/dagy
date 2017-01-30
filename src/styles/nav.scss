@@ -1,6 +1,7 @@
 .nav {
 	display: flex;
 	align-items: center;
+	font-size: 18px;
 
 	@media (max-width: 680px) {
 		display: none;
