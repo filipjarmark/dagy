@@ -38,7 +38,9 @@
 
 		progress.classList.remove('slides__progress--play');
 		requestAnimationFrame(function () {
-			progress.classList.add('slides__progress--play');
+			requestAnimationFrame(function () {
+				progress.classList.add('slides__progress--play');
+			});
 		});
 
 		clearTimeout(timeout);
