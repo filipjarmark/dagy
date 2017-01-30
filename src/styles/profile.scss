@@ -5,6 +5,10 @@
 	justify-content: space-between;
 	margin: 16px -16px;
 	padding: 0 16px;
+
+	@media (max-width: 760px) {
+		display: block;
+	}
 }
 
 .profile {
@@ -12,6 +16,11 @@
 	flex: 1;
 	align-items: center;
 	margin: 16px;
+
+	@media (max-width: 360px) {
+		display: block;
+		padding-top: 16px;
+	}
 
 	&__image {
 		width: 72px;
