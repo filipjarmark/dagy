@@ -14,12 +14,10 @@
 }
 
 .button:focus {
-	-webkit-filter: brightness(.9);
 	filter: brightness(.9);
 	outline: none;
 }
 
 .button:hover {
-	-webkit-filter: brightness(.95);
 	filter: brightness(.95);
 }

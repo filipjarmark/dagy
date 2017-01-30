@@ -6,6 +6,7 @@ const browserSync = require('browser-sync').create();
 const runSequence = require('run-sequence');
 const inline = require('gulp-inline');
 const htmlmin = require('gulp-htmlmin');
+const autoprefixer = require('gulp-autoprefixer');
 
 const filterCSS = require('./gulp/filter-css.js');
 
@@ -49,6 +50,9 @@ gulp.task('watch', () => {
 gulp.task('styles', () => {
 	return gulp.src('src/styles/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
+		.pipe(autoprefixer({
+			browsers: 'last 2 versions, safari 8'
+		}))
 		.pipe(gulp.dest('build/styles'));
 });
 
