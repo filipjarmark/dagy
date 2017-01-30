@@ -1,0 +1,29 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<img class="content cover" src="/images/5mz_m06fc9g-roman-mager.png" alt="Matematik">
+
+	<section class="content content--columns">
+		<div class="content__column">
+			<span class="title">Matematik spetsutbildning</span>
+
+			<p class="text">
+				Varje vecka kommer här att finnas ett matematiskt problem av varierande svårighetsgrad. E-maila gärna dina lösningar och svar till susanne.gennow@dagy.danderyd.se
+			</p>
+
+			<p class="text">
+				Rätt svar på föregående problem: 4:3
+			</p>
+
+			<p class="text">
+				För tre positiva heltal a, b, c gäller att abc = 144 och a2 + b2 + c2 = 149. Bestäm a + b + c.
+			</p>
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/matematik-spets/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}
