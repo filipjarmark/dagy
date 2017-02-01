@@ -32,6 +32,7 @@
 }
 
 .slides__list {
+	position: relative;
 	font-size: 22px;
 	@include serif();
 	max-width: 1024px;
