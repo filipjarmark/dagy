@@ -2,7 +2,7 @@
 
 body {
 	@include sans();
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0;
 	text-decoration-skip: ink;
 	display: flex;
@@ -12,6 +12,7 @@ body {
 
 main {
 	flex: 1;
+	flex-basis: auto;
 	position: relative;
 }
 
