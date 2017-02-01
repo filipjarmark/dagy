@@ -84,6 +84,8 @@
 }
 
 .slide__content {
+	position: relative;
+	z-index: 1;
 	height: 100%;
 	max-width: 1024px;
 	margin: 0 auto;
@@ -105,7 +107,6 @@
 	right: -4px;
 	bottom: -4px;
 	left: -4px;
-	z-index: -1;
 
 	background-size: cover;
 	background-repeat: no-repeat;
