@@ -1,0 +1,91 @@
+{% set page_url = '/om-skolan/skolledningen' %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<section class="banner">
+		<div class="banner__img" style="background-image: url('/images/IMG_20160912_170024.png');"></div>
+
+		<div class="banner__content content">
+			<div class="banner__title title">Om skolan</div>
+			<p class="banner__text">
+			</p>
+		</div>
+	</section>
+
+	<section class="content content--columns">
+		<div class="content__column">
+
+			<div class="profile">
+				<img class="profile__image" src="/images/wallin.png" alt="Viktoria Wallin">
+				<div class="profile__info">
+					<div class="profile__title">Viktoria Wallin</div>
+					<div>Tf. gymnasiechef</div>
+
+					<a class="profile__link" href="mailto:viktoria.wallin@dagy.danderyd.se">
+						viktoria.wallin@dagy.danderyd.se
+					</a>
+					<a class="profile__link" href="tel:073-807 03 05">
+						073-807 03 05
+					</a>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="profile">
+				<img class="profile__image" src="/images/FRY%20JEANETTE%20120x180.png" alt="Jeanette Fry">
+				<div class="profile__info">
+					<div class="profile__title">Jeanette Fry</div>
+					<div>Rektor EK</div>
+
+					<a class="profile__link" href="mailto:jeanette.fry@dagy.danderyd.se">
+						jeanette.fry@dagy.danderyd.se
+					</a>
+					<a class="profile__link" href="tel:073-748 11 86">
+						073-748 11 86
+					</a>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="profile">
+				<img class="profile__image" src="/images/olsson.png" alt="Per-Åke Olsson">
+				<div class="profile__info">
+					<div class="profile__title">Per-Åke Olsson</div>
+					<div>Rektor SA-NA-ES</div>
+
+					<a class="profile__link" href="mailto:paolsson@dagy.danderyd.se">
+						paolsson@dagy.danderyd.se
+					</a>
+					<a class="profile__link" href="tel:073-748 19 22">
+						073-748 19 22
+					</a>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="profile">
+				<img class="profile__image" src="/images/anette-bjaras.png" alt="Anette Bjärås">
+				<div class="profile__info">
+					<div class="profile__title">Anette Bjärås</div>
+					<div>Rektor NA-TE</div>
+
+					<a class="profile__link" href="mailto:bjaras@dagy.danderyd.se">
+						bjaras@dagy.danderyd.se
+					</a>
+					<a class="profile__link" href="tel:08-568 91 000">
+						08-568 91 000
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content__column">
+			{% include "../templates/om-skolan/side-menu.html" %}
+		</div>
+	</section>
+{% endblock %}
