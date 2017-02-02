@@ -1,14 +1,16 @@
-{% set page_url = '/program/estet' %}
 {% set header_dark = true %}
 
-{% extends "../templates/default.html" %}
+{% extends "../default.html" %}
 
 {% block content %}
 	<div class="content cover" style="background-image: url('/images/tq4yjca2bsc-alex-jones.png');"></div>
 
 	<section class="content content--columns">
 		<div class="content__column">
-			<span class="title">Musik, Bild och formgivning eller Teater</span>
+			<div class="title">Musik, Bild och formgivning eller Teater</div>
+			<div class="subtitle">
+				{% block program %}{% endblock %}
+			</div>
 
 			<p class="text">
 				Här finns en möjlighet för dig som vill kombinera
@@ -86,7 +88,8 @@
 		</div>
 
 		<div class="content__column">
-			{% include "../templates/estet/side-menu.html" %}
+			{% block side %}
+			{% endblock %}
 		</div>
 	</section>
 {% endblock %}
