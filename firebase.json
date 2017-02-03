@@ -26,6 +26,31 @@
         "key" : "Cache-Control",
         "value" : "public, max-age=31536000"
       } ]
+    } ],
+    "redirects": [ {
+      "source": "/default.aspx?epslanguage=sv",
+      "destination": "/",
+      "type": 301
+    }, {
+      "source": "/templates/page____34.aspx?epslanguage=sv",
+      "destination": "/",
+      "type": 301
+    }, {
+      "source": "/templates/page____123.aspx?epslanguage=sv",
+      "destination": "/program",
+      "type": 301
+    }, {
+      "source": "/templates/page____476.aspx?epslanguage=sv",
+      "destination": "/kontakt",
+      "type": 301
+    }, {
+      "source": "/templates/page____127.aspx?epslanguage=sv",
+      "destination": "/om-skolan/lasarsdata",
+      "type": 301
+    }, {
+      "source": "/templates/page____5.aspx?epslanguage=sv",
+      "destination": "/om-skoolan",
+      "type": 301
     } ]
   }
 }
