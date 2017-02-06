@@ -32,24 +32,32 @@
       "destination": "/",
       "type": 301
     }, {
-      "source": "/templates/page____34.aspx?epslanguage=sv",
+      "source": "/templates/@(p|P)age____34.aspx*",
       "destination": "/",
       "type": 301
     }, {
-      "source": "/templates/page____123.aspx?epslanguage=sv",
+      "source": "/templates/@(p|P)age____123.aspx*",
       "destination": "/program",
       "type": 301
     }, {
-      "source": "/templates/page____476.aspx?epslanguage=sv",
+      "source": "/templates/@(p|P)age____476.aspx*",
       "destination": "/kontakt",
       "type": 301
     }, {
-      "source": "/templates/page____127.aspx?epslanguage=sv",
+      "source": "/templates/@(p|P)age____127.aspx*",
       "destination": "/om-skolan/lasarsdata",
       "type": 301
     }, {
-      "source": "/templates/page____5.aspx?epslanguage=sv",
+      "source": "/templates/@(p|P)age____5.aspx*",
       "destination": "/om-skolan",
+      "type": 301
+    }, {
+      "source": "/templates/@(p|P)age____772.aspx*",
+      "destination": "/program/matematik-spets",
+      "type": 301
+    }, {
+      "source": "/templates/@(p|P)age____710.aspx*",
+      "destination": "/program/ekonomi",
       "type": 301
     } ]
   }
