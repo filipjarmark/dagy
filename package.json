@@ -5,7 +5,7 @@
   "author": "Johan Holmerin <johan@holmer.in>",
   "private": true,
   "scripts": {
-    "clean": "rm -rf build",
+    "clean": "rimraf build",
     "dev": "npm run clean && gulp dev",
     "build": "npm run clean && gulp build",
     "deploy": "npm run build && firebase deploy"
@@ -21,6 +21,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8",
     "postcss": "^5.2.11",
+    "rimraf": "^2.5.4",
     "run-sequence": "^1.2.2",
     "through2": "^2.0.3"
   }
