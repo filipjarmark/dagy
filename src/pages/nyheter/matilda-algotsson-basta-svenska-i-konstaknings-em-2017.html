@@ -1,0 +1,37 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<div class="content cover" style="background-image: url('/images/konstakning.jpeg');"></div>
+
+	<section class="content">
+		<div class="text-wrapper">
+			<div class="title">Matilda Algotsson bästa svenska i konståknings EM 2017</div>
+
+			<div class="label">
+				<img class="icon" src="/images/icons/calendar.svg" aria-hidden="true">
+				23 januari 2017
+			</div>
+
+			<p class="text">
+				Matilda fick 103,28 poäng vilket resulterade i en 13:e plats.
+				Matilda går idag tredje året på DAGY på Naturvetenskapliga programmet fördjupning internationalisering.
+			</p>
+
+		</div>
+	</section>
+
+	<section class="pagination__wrapper">
+		<div class="pagination__spacer"></div>
+
+		<a href="/nyheter/forsta-plats-i-skolornas-matematiktavling" class="pagination">
+ 			<div class="pagination__right">
+ 				<div class="pagination__subtitle">Föregående nyhet</div>
+				<div class="pagination__title">Första plats i Skolornas Matematiktävling</div>
+ 			</div>
+
+ 			<img class="icon icon--large" src="/images/icons/right.svg" aria-hidden="true">
+ 		</a>
+	</section>
+{% endblock %}
