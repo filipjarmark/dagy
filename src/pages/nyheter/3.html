@@ -1,0 +1,65 @@
+{% set page_url = '/nyheter' %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<section class="banner">
+		<div class="banner__img" style="background-image: url('/images/xitfeni0dmy-patrik-gothe.png');"></div>
+
+		<div class="banner__content content">
+			<div class="banner__title title">Nyheter</div>
+			<p class="banner__text">
+			</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<a href="/nyheter/eleverna-pa-ekonomiprogrammets-globala-profil-pa-studieresa-i-berlin" class="news-item">
+			<div class="news-item__image" style="background-image: url('/images/14716433_321198488243629_8099338009834422272_n.jpg');"></div>
+
+			<div>
+				<div class="news-item__title">
+					Eleverna på Ekonomiprogrammets
+					<br>
+					globala profil på studieresa i Berlin
+				</div>
+				<p class="news-item__text">
+					Vecka 42 besökte eleverna i E14e, Ekonomiprogrammets globala profil, Berlin. Studiebesöken har koppling till kurserna Företagsekonomisk specialisering och Politik och hållbar utveckling.
+				</p>
+
+				<div class="label">
+					<img class="icon" src="/images/icons/calendar.svg" aria-hidden="true">
+					21 oktober 2016
+				</div>
+			</div>
+		</a>
+
+		<a href="/nyheter/s15b-byter-klassrum-mot-kavlugnt-vatten" class="news-item">
+			<div class="news-item__image" style="background-image: url('/images/smaller-2017-02-07T12-24-54.453Z.jpeg');"></div>
+
+			<div>
+				<div class="news-item__title">
+					S15b byter klassrum mot kavlugnt vatten
+				</div>
+				<p class="news-item__text">
+					I kursen människors miljöer provar eleverna på att leva i andra miljöer. Utgångspunkten är att bedriva olika levnadssätt med annorlunda livsperspektiv.
+				</p>
+
+				<div class="label">
+					<img class="icon" src="/images/icons/calendar.svg" aria-hidden="true">
+					25 augusti 2016
+				</div>
+			</div>
+		</a>
+
+		<div class="pagination">
+			<a href="/nyheter" class="pagination__item">1</a>
+			<a href="/nyheter/2" class="pagination__item">2</a>
+			<a href="/nyheter/3" class="pagination__item pagination__item--active">3</a>
+			<!-- <a href="/nyheter/3" class="pagination__item">
+			 	Nästa
+			 	<img class="icon" src="/images/icons/right.svg" aria-hidden="true">
+			</a> -->
+		</div>
+	</section>
+{% endblock %}

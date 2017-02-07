@@ -1,0 +1,47 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<div class="content cover" style="background-image: url('/images/14712927_1572784792739040_8815257292240125715_o.jpg');"></div>
+
+	<section class="content">
+		<div class="text-wrapper">
+			<div class="title">Dagy på plats på gymnasiemässan i Älvsjö</div>
+
+			<div class="label">
+				<img class="icon" src="/images/icons/calendar.svg" aria-hidden="true">
+				23 november 2016
+			</div>
+
+			<p class="text">
+				Du som besöker gymnasiemässan i Älvsjö mellan den 23 och 25 november är varmt välkommen att komma och träffa våra duktiga DaGy-ambassadörer i montern.
+			</p>
+
+		</div>
+	</section>
+
+	<section class="pagination__wrapper">
+		<a href="/nyheter/forelasning-med-entreprenoren-karoline-kull" class="pagination">
+			<img class="icon icon--large" src="/images/icons/left.svg" aria-hidden="true">
+
+			<div class="pagination__left">
+				<div class="pagination__subtitle">Nästa nyhet</div>
+				<div class="pagination__title">Föreläsning med entreprenören Karoline Kull</div>
+			</div>
+		</a>
+
+		<div class="pagination__spacer"></div>
+
+		<a href="/nyheter/unga-kris-forelaste-for-eleverna-pa-ekonomi-programmets-inriktning-juridik" class="pagination">
+			<div class="pagination__right">
+				<div class="pagination__subtitle">Föregående nyhet</div>
+				<div class="pagination__title">
+					Unga Kris föreläste för eleverna på Ekonomi programmets inriktning Juridik
+				</div>
+			</div>
+
+			<img class="icon icon--large" src="/images/icons/right.svg" aria-hidden="true">
+		</a>
+	</section>
+{% endblock %}
