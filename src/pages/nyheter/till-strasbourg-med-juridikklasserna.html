@@ -1,0 +1,47 @@
+{% set header_dark = true %}
+
+{% extends "../templates/default.html" %}
+
+{% block content %}
+	<div class="content cover" style="background-image: url('/images/image002-str.jpg');"></div>
+
+	<section class="content">
+		<div class="text-wrapper">
+			<div class="title">Till Strasbourg med juridikklasserna!</div>
+
+			<div class="label">
+				<img class="icon" src="/images/icons/calendar.svg" aria-hidden="true">
+				18 november 2016
+			</div>
+
+			<p class="text">
+				Årets resa ”I de mänskliga rättigheternas tecken” gick till Strasbourg med klasserna J14a+b som läser Ekonomiprogrammets inriktning Juridik. Strasbourg är säte för bland annat Europarådet, EU-Parlamentet och Europadomstolen för mänskliga rättigheter. Staden har en tysk-fransk historia och bjuder på många sevärdheter. Under resan samlade vi intryck, kunskaper och roliga minnen för livet!
+			</p>
+
+		</div>
+	</section>
+
+	<section class="pagination__wrapper">
+		<a href="/nyheter/dagy-pa-plats-pa-dante-massan" class="pagination">
+			<img class="icon icon--large" src="/images/icons/left.svg" aria-hidden="true">
+
+			<div class="pagination__left">
+				<div class="pagination__subtitle">Nästa nyhet</div>
+				<div class="pagination__title">Dagy på plats på DANTE-mässan</div>
+			</div>
+		</a>
+
+		<div class="pagination__spacer"></div>
+
+		<a href="/nyheter/eleverna-pa-ekonomiprogrammets-globala-profil-pa-studieresa-i-berlin" class="pagination">
+			<div class="pagination__right">
+				<div class="pagination__subtitle">Föregående nyhet</div>
+				<div class="pagination__title">
+					Eleverna på Ekonomiprogrammets globala profil på studieresa i Berlin
+				</div>
+			</div>
+
+			<img class="icon icon--large" src="/images/icons/right.svg" aria-hidden="true">
+		</a>
+	</section>
+{% endblock %}
