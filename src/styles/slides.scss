@@ -116,6 +116,10 @@
 	opacity: .5;
 
 	filter: blur(2px);
+
+	&__no-blur {
+		filter: none;
+	}
 }
 
 .slide__title {
