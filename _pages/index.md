@@ -1,4 +1,5 @@
 ---
+title: Home
 layout: home
 slides:
   - title: Ambition, engagemang och gemenskap
