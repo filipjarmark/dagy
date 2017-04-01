@@ -1,11 +1,11 @@
 ---
 title: Språkintroduktion
-collection: programs
+menu_order: .nan
 layout: sub
 image: /assets/082dcxnkfxu-alex-read.png
+collection: programs
 programs_order: 5
 ---
-
 Språkintroduktion (SI) på Dagy startade april 2016. Under
 läsåret 2016/2017 har vi två klasser. SI vänder sig till dig
 som nyligen anlänt till Sverige, och ännu
