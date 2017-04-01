@@ -1,32 +1,14 @@
 ---
 title: Ekonomi&shy;programmet
-collection: programs
+menu_order: 0
 layout: sub
 image: /assets/16124218_455844131427852_8435288921503432704_n.jpg
+collection: programs
 programs_order: 1
-menu_order: 0
 ---
+På Ekonomiprogrammet studerar du svenska och internationella företags och organisationers roll i samhällsutvecklingen ur olika perspektiv och förutsättningar för företagande. Arbetsformer och metodik bidrar till att utveckla ett vetenskapligt förhållningssätt. Du kommer att analysera och värdera information samt att argumentera för dina slutsatser utifrån ekonomiska, samhällsvetenskapliga och juridiska frågeställningar.
 
-På Ekonomiprogrammet studerar du svenska och internationella
-företags och organisationers roll i samhällsutvecklingen
-ur olika perspektiv och förutsättningar för företagande.
-Arbetsformer och metodik bidrar till att utveckla ett
-vetenskapligt förhållningssätt. Du kommer att analysera och
-värdera information samt att argumentera för dina slutsatser
-utifrån ekonomiska, samhällsvetenskapliga och juridiska
-frågeställningar.
-
-Din språkliga förmåga kommer att utvecklas och du får
-använda modern teknik som redskap för informationssökning,
-kommunikation och att kreativt skapa nya typer av
-framställningar. Du kommer att göra studiebesök, lyssna
-på intressanta föreläsningar och arbeta med olika case
-kopplade till företag.
-Du får kontakt med företag och får inom inriktningen eller genom att välja till kursen, praktisk erfarenhet av att starta och driva företag genom Ung Företagsamhet, UF. Undervisningen bedrivs av engagerade lärare med god kompetens inom sina respektive områden.
-Ekonomiprogrammet på Danderyds
-gymnasium ger dig behörighet och en bra grund
-för framgångsrika högskolestudier inom främst ekonomi,
-juridik och samhällsvetenskapliga områden.
+Din språkliga förmåga kommer att utvecklas och du får använda modern teknik som redskap för informationssökning, kommunikation och att kreativt skapa nya typer av framställningar. Du kommer att göra studiebesök, lyssna på intressanta föreläsningar och arbeta med olika case kopplade till företag. Du får kontakt med företag och får inom inriktningen eller genom att välja till kursen, praktisk erfarenhet av att starta och driva företag genom Ung Företagsamhet, UF. Undervisningen bedrivs av engagerade lärare med god kompetens inom sina respektive områden. Ekonomiprogrammet på Danderyds gymnasium ger dig behörighet och en bra grund för framgångsrika högskolestudier inom främst ekonomi, juridik och samhällsvetenskapliga områden.
 
 På ekonomiprogrammet har vi under en lång tid haft ett starkt och aktivt programråd, bestående av elever som driver viktiga skolfrågor ur elevperspektiv. De gör också sitt bästa för att skapa trivsel och skapa sammanhållning mellan årskurserna.
 
