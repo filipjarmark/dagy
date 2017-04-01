@@ -1,5 +1,5 @@
 ---
-title: Ekonomi&shy;programmet
+title: Ekonomiprogrammet
 menu_order: 0
 layout: sub
 image: /assets/16124218_455844131427852_8435288921503432704_n.jpg
